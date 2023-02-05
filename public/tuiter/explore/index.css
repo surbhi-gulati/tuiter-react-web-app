@@ -1,0 +1,75 @@
+.wd-all-content-left {
+    background-color: black;
+    margin-left: 16px;
+}
+
+.wd-all-content-padded {
+    padding-left: 16px;
+}
+
+.wd-all-content-font {
+    font-family: Arial;
+}
+
+.wd-borders { 
+    border-color: #333333; 
+    border-width: 0.5px;
+    border-style: solid;
+    padding-left: 16px;
+}
+
+.wd-searchbar { 
+    border-radius: 50px;
+    height: 33px;
+    width: 500px;
+    color: white; 
+    background-color: darkgrey;
+    margin-bottom: 16px;
+}
+
+.wd-explore-tabs-font {
+    font-size: 15px;
+    padding: 16px; 
+}
+
+.wd-selected-page-link { 
+    color: #1DA1F2; 
+    border-bottom: solid #1DA1F2;
+    padding-bottom: 8px;
+    border-bottom-width: 3px;
+    text-decoration: none;
+}
+
+.wd-page-links { 
+    color: #666666; 
+    text-decoration: none;
+}
+
+.wd-item-company { 
+    color: white; 
+    font-size: 14px;
+}
+
+.wd-item-topic { 
+    color: #666666; 
+    font-size: 13px;
+}
+
+.wd-item-topic-as-inline { 
+    display: inline-block;
+}
+
+.wd-item-title { 
+    color: white; 
+    font-size: 16px;
+}
+
+.wd-item-image { 
+    margin-right: 16px;
+    height: 100px;
+    width: 100px;
+    float: right;
+    border-radius: 15px;
+    align-items: center;
+    margin-right: 16px;
+}
