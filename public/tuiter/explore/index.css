@@ -1,14 +1,5 @@
-.wd-all-content-left {
-    background-color: black;
-    margin-left: 16px;
-}
-
 .wd-all-content-padded {
     padding-left: 16px;
-}
-
-.wd-all-content-font {
-    font-family: Arial;
 }
 
 .wd-borders { 
@@ -24,6 +15,10 @@
     width: 500px;
     color: white; 
     background-color: darkgrey;
+    margin-bottom: 16px;
+}
+
+.wd-explore-tabs-bottom {
     margin-bottom: 16px;
 }
 
