@@ -2,31 +2,66 @@
     background-color: black;
     border-color: rgb(47, 51, 54);
     font-family: Arial;
+    padding-left: 16px;
 }
 
 .wd-vertical-centered {
     transform: translateY(-50%);
 }
 
+.wd-page-header-border {
+    border: #666666 1px solid;
+    padding-left: 16px;
+}
+
 .wd-page-header { 
     color: white; 
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 4px;
+}
+
+.wd-page-header-handle { 
+    color: #666666; 
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 2px;
 }
 
 .wd-item-company { 
     color: white; 
     font-size: 14px;
+    padding-top: 13px;
 }
 
 .wd-item-topic { 
     color: #666666; 
     font-size: 13px;
     margin-bottom: 0;
+    margin-top: 13px;
+}
+
+.wd-item-tweet-count { 
+    color: #666666; 
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+
+.wd-item-person { 
+    color: white; 
+    font-size: 15px;
+}
+
+.wd-item-person-details { 
+    color: #666666; 
+    font-size: 15px;
+    margin-bottom: 0;
 }
 
 .wd-item-title { 
     color: white; 
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bold;
     margin-top: 6px;
     margin-bottom: 0;
@@ -37,16 +72,6 @@
     font-size: 16px;
 }
 
-.wd-borders { 
-    border-color: #333333; 
-    border-width: 0.5px;
-    border-style: solid;
-    padding-left: 16px;
-    height: 130px;
-    justify-content: center;
-    align-items: center;
-}
-
-.wd-test {
-    padding-top: 10px;
+.wd-floatleft { 
+    display: inline;
 }
