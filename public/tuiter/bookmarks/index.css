@@ -36,10 +36,15 @@
     margin-top: 12px;
 }
 
-.wd-bookmark-article-image {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.wd-bookmark-article {
+    border-radius: 20px;
     border: #333333 1px solid;
+    margin-bottom: 0px;
+    width: 504px;
+}
+
+.wd-bookmark-article-image {
+    border-bottom: #333333 1px solid;
     width: 504px;
     height: 263px;
     margin-bottom: 0;
@@ -47,11 +52,8 @@
 }
 
 .wd-bookmark-article-text {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border: #333333 1px solid;
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
     max-width: 506px;
 }
 
@@ -61,16 +63,30 @@
     margin-top: 1px;
 }
 
-.wd-bookmark-share-icons a {
-    /* margin-top: 12px; */
-    /* margin-bottom: 12px; */
-    padding-right: 12px;
-    color: lightgray;
-    text-decoration: none;
-    display: flex;
+.wd-bookmark-icon {
+    margin-top: 12px;
     justify-content: space-evenly;
+    display: flex;
 }
 
-.wd-bookmark-like-color {
+.wd-bookmark-icon a {
+    margin-bottom: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-bookmark-icon i {
+    padding-right: 12px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: lightgray;
+    font-size: 15px;
+}
+
+.wd-bookmark-icon .wd-bookmark-heart-icon {
+    color: red;
+}
+.wd-bookmark-icon .fa-solid.fa-heart {
     color: red;
 }

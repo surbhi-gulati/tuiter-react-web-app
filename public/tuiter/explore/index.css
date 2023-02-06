@@ -1,7 +1,3 @@
-.wd-all-content-padded {
-    padding-left: 16px;
-}
-
 .wd-explore-borders { 
     border-color: #333333; 
     border-width: 0.5px;
@@ -10,6 +6,7 @@
     height: 130px;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .wd-explore-searchbar { 
@@ -55,13 +52,18 @@
     display: inline-block;
 }
 
+.wd-explore-item-has-image {
+    /* display: inline; */
+}
+
 .wd-item-image { 
     margin-right: 16px;
     height: 100px;
     width: 100px;
-    float: right;
+    flex: right;
     border-radius: 15px;
-    align-items: center;
+    padding-top: 0px;
+    padding-left: 90px;
 }
 
 .wd-fldone {
