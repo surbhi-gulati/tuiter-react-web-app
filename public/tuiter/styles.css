@@ -1,6 +1,52 @@
 .wd-tuiter-theme {
     background-color: black;
     border-color: rgb(47, 51, 54);
-    margin-left: 16px;
     font-family: Arial;
+}
+
+.wd-vertical-centered {
+    transform: translateY(-50%);
+}
+
+.wd-page-header { 
+    color: white; 
+    font-size: 24px;
+}
+
+.wd-item-company { 
+    color: white; 
+    font-size: 14px;
+}
+
+.wd-item-topic { 
+    color: #666666; 
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.wd-item-title { 
+    color: white; 
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.wd-item-subtitle { 
+    color: #666666; 
+    font-size: 16px;
+}
+
+.wd-borders { 
+    border-color: #333333; 
+    border-width: 0.5px;
+    border-style: solid;
+    padding-left: 16px;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wd-test {
+    padding-top: 10px;
 }

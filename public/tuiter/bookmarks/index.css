@@ -1,0 +1,16 @@
+.wd-profile-avatar { 
+    margin-left: 16px;
+    height: 48px;
+    width: 48px;
+    border-radius: 15px;
+}
+
+.rounded-corners-top {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+ 
+.rounded-corners-bottom {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}

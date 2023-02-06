@@ -2,20 +2,19 @@
     padding-left: 16px;
 }
 
-.wd-borders { 
-    border-color: #333333; 
-    border-width: 0.5px;
-    border-style: solid;
-    padding-left: 16px;
-}
-
 .wd-searchbar { 
     border-radius: 50px;
     height: 33px;
     width: 500px;
     color: white; 
     background-color: darkgrey;
-    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-size: 16px;
+}
+
+.wd-horizontal-center {
+    margin: auto;
 }
 
 .wd-explore-tabs-bottom {
@@ -40,23 +39,12 @@
     text-decoration: none;
 }
 
-.wd-item-company { 
-    color: white; 
-    font-size: 14px;
-}
-
-.wd-item-topic { 
-    color: #666666; 
-    font-size: 13px;
-}
-
 .wd-item-topic-as-inline { 
     display: inline-block;
 }
 
-.wd-item-title { 
-    color: white; 
-    font-size: 16px;
+.wd-floatleft { 
+    display: inline;
 }
 
 .wd-item-image { 
@@ -68,3 +56,9 @@
     align-items: center;
     margin-right: 16px;
 }
+
+/* .wd-item-has-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
