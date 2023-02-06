@@ -47,25 +47,19 @@
     text-decoration: none;
 }
 
-
 .wd-item-topic-as-inline { 
     display: inline-block;
 }
 
 .wd-explore-item-has-image {
-    /* display: inline; */
+    float: left;
 }
 
 .wd-item-image { 
     margin-right: 16px;
     height: 100px;
     width: 100px;
-    flex: right;
+    float: right;
     border-radius: 15px;
-    padding-top: 0px;
-    padding-left: 90px;
-}
-
-.wd-fldone {
-    clear: both;
+    padding-top: 15px;
 }
