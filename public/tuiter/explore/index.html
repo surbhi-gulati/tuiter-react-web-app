@@ -17,31 +17,41 @@
                         <i class="fab fa-twitter"></i>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action"> 
-                        <i class="fa-sharp fa-solid fa-house-chimney"></i> Home
+                        <div class="d-inline-flex">
+                            <i class="fa-sharp fa-solid fa-house-chimney"></i>
+                            <p class="d-none d-lg-block"> Home </p>
+                        </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action active"> 
-                        <i class="fa-solid fa-hashtag"></i> Explore
+                        <i class="fa-solid fa-hashtag"></i> 
+                        <div class="d-inline d-none d-lg-block"> Explore </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action"> 
-                        <i class="fa-solid fa-bell"></i> Notifications
+                        <i class="fa-solid fa-bell"></i>
+                        <div class="d-inline d-none d-lg-block"> Notifications </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action"> 
-                        <i class="fa-solid fa-envelope"></i> Messages
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="d-inline d-none d-lg-block"> Messages </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action"> 
-                        <i class="fa-solid fa-bookmark"></i> Bookmarks
+                        <i class="fa-solid fa-bookmark"></i>
+                        <div class="d-inline d-none d-lg-block"> Bookmarks </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action"> 
-                        <i class="fa-solid fa-list"></i> Lists
+                        <i class="fa-solid fa-list"></i>
+                        <div class="d-inline d-none d-lg-block"> Lists </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action"> 
-                        <i class="fa-solid fa-user"></i> Profile
+                        <i class="fa-solid fa-user"></i> 
+                        <div class="d-inline d-none d-lg-block"> Profile </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action"> 
-                        <i class="fa-solid fa-plus"></i> More
+                        <i class="fa-solid fa-plus"></i>
+                        <div class="d-inline d-none d-lg-block"> More </div>
                     </a>
                 </div>
-                <button type="submit" class="btn btn-primary btn-rounded">Tweetf</button>
+                <button type="submit" class="btn btn-primary rounded-pill rounded-3">Tweet</button>
             </div>
             <div class="col-sm-6">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -60,33 +70,87 @@
                         <a class="nav-link" href="#">Sports</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Entertainment</a>
+                        <a class="nav-link d-none d-md-block" href="#">Entertainment</a>
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col"> 
+                                <div class="text-muted">Web Development</div>
+                                <div> <b> ReactJS </b> <i class="fa-solid fa-circle-check"></i> </div> 
+                                <b> React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs </b>                            </div>
+                            <div class="col"> 
+                                LOGO
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col"> 
+                                <div> <b> JavaScript </b> <i class="fa-solid fa-circle-check"></i> </div> 
+                                <b> JavaScript is programming language that can run on browsers as well as desktops </b>
+                                <div class="text-muted">123K Tweets</div>                            </div>
+                            <div class="col"> 
+                                LOGO
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col"> 
+                                <div class="text-muted">Web Development</div>
+                                <p> <b> jQuery </b> </p>
+                                <div class="text-muted">123K Tweets</div>                            </div>
+                            <div class="col"> 
+                                LOGO
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col"> 
+                                <div class="text-muted">Web Development</div>
+                                <div> <b> NodeJS </b> <i class="fa-solid fa-circle-check"></i> </div> 
+                                <div class="text-muted">123K Tweets</div>                            </div>
+                            <div class="col"> 
+                                LOGO
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
-            <div class="col-4">
+            <div class="col-4 d-none d-lg-block">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        Who to follow <i class="fa-solid fa-circle-check"></i>
+                        <b> Who to follow </b>
                     </li>
                     <li class="list-group-item">
-                        <p class="font-weight-bold"> Java <i class="fa-solid fa-circle-check"></i> </p>
-                        <div class="text-secondary">@Jmava</div> 
+                        <div class="row">
+                            <div class="col"> 
+                                <b> Java </b> <i class="fa-solid fa-circle-check"></i>
+                                <div class="text-secondary">@Java</div> 
+                            </div>
+                            <div class="col"> 
+                                <button type="submit" class="btn btn-primary rounded-pill float-end">Follow</button>
+                            </div>
+                            
+                        </div>
                     </li>
                     <li class="list-group-item">
-                        Relativity Space <i class="fa-solid fa-circle-check"></i>
+                        <b> Relativity Space </b>  <i class="fa-solid fa-circle-check"></i>
                         <div class="text-secondary">@relativityspace</div> 
                     </li>
                     <li class="list-group-item">
-                        Virgin Galactic <i class="fa-solid fa-circle-check"></i>
+                        <b> Virgin Galactic </b>  <i class="fa-solid fa-circle-check"></i>
                         <div class="text-secondary">@virgingalactic</div> 
                     </li>
                     <li class="list-group-item">
-                        NASA <i class="fa-solid fa-circle-check"></i>
+                        <b> NASA </b> <i class="fa-solid fa-circle-check"></i>
                         <div class="text-secondary">@NASA</div> 
                     </li>
                     <li class="list-group-item">
-                        Tesla <i class="fa-solid fa-circle-check"></i>
+                        <b> Tesla </b>  <i class="fa-solid fa-circle-check"></i>
                         <div class="text-secondary">@Tesla</div> 
                     </li>
                 </ul>
