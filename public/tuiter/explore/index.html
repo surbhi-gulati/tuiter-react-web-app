@@ -9,53 +9,58 @@
    <link href="../styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="container">
+    <div class="mt-2 container">
         <div class="row">
-            <div class="col-2">
+            <div class="col col-2">
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action"> 
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action"> 
-                        <div class="d-inline-flex">
-                            <i class="fa-sharp fa-solid fa-house-chimney"></i>
-                            <p class="d-none d-lg-block"> Home </p>
-                        </div>
+                    <a href="#" class="d-inline-flex list-group-item list-group-item-action align-items-center"> 
+                        <i class="fa-sharp fa-solid fa-house-chimney"></i>
+                        <div class="ms-1 d-none d-xl-block"> Home </div>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action active"> 
+                    <a href="#" class="d-inline-flex list-group-item list-group-item-action align-items-center"> 
                         <i class="fa-solid fa-hashtag"></i> 
-                        <div class="d-inline d-none d-lg-block"> Explore </div>
+                        <div class="ms-1 d-none d-xl-block"> Explore </div>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action"> 
+                    <a href="#" class="d-inline-flex list-group-item list-group-item-action align-items-center"> 
                         <i class="fa-solid fa-bell"></i>
-                        <div class="d-inline d-none d-lg-block"> Notifications </div>
+                        <div class="ms-1 d-none d-xl-block"> Notifications </div>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action"> 
+                    <a href="#" class="d-inline-flex list-group-item list-group-item-action align-items-center"> 
                         <i class="fa-solid fa-envelope"></i>
-                        <div class="d-inline d-none d-lg-block"> Messages </div>
+                        <div class="ms-1 d-none d-xl-block"> Messages </div>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action"> 
+                    <a href="#" class="d-inline-flex list-group-item list-group-item-action align-items-center"> 
                         <i class="fa-solid fa-bookmark"></i>
-                        <div class="d-inline d-none d-lg-block"> Bookmarks </div>
+                        <div class="ms-1 d-none d-xl-block"> Bookmarks </div>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action"> 
+                    <a href="#" class="d-inline-flex list-group-item list-group-item-action align-items-center"> 
                         <i class="fa-solid fa-list"></i>
-                        <div class="d-inline d-none d-lg-block"> Lists </div>
+                        <div class="ms-1 d-none d-xl-block"> Lists </div>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action"> 
+                    <a href="#" class="d-inline-flex list-group-item list-group-item-action align-items-center"> 
                         <i class="fa-solid fa-user"></i> 
-                        <div class="d-inline d-none d-lg-block"> Profile </div>
+                        <div class="ms-1 d-none d-xl-block"> Profile </div>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action"> 
+                    <a href="#" class="d-inline-flex list-group-item list-group-item-action align-items-center"> 
                         <i class="fa-solid fa-plus"></i>
-                        <div class="d-inline d-none d-lg-block"> More </div>
+                        <div class="ms-1 d-none d-xl-block"> More </div>
                     </a>
                 </div>
-                <button type="submit" class="btn btn-primary rounded-pill col-12">Tweet</button>
+                <button type="submit" class="mt-2 btn btn-primary rounded-pill col-12">Tweet</button>
             </div>
             <div class="col-sm-6">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-gear"></i>
+                <div class="row align-items-center mb-2">
+                    <div class="col d-inline-flex"> 
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="form-control rounded-pill" placeholder="&nbsp;&nbsp;Search Twitter">
+                    </div>
+                    <div class="col-sm-1 float-right"> 
+                        <i class="fa-solid fa-gear fa-2x" style="color: #0d6efd"></i>                               
+                    </div>
+                </div>
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">For you</a>
@@ -73,6 +78,8 @@
                         <a class="nav-link d-none d-md-block" href="#">Entertainment</a>
                     </li>
                 </ul>
+                <img src="../../images/starship.jpeg"
+                        class="card-img-top" alt="SpaceX Starship">  
                 <ul class="list-group">
                     <li class="list-group-item">
                         <div class="row align-items-center">
@@ -82,7 +89,8 @@
                                 <b> React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs </b>                            </div>
                             <div class="col-2"> 
                                 <img src="../../images/react_logo.png"
-                                class="card-img-top" alt="React">                                  </div>
+                                class="card-img-top" alt="React">                                  
+                            </div>
                         </div>
                     </li>
                     <li class="list-group-item">
@@ -90,10 +98,12 @@
                             <div class="col"> 
                                 <div> <b> JavaScript </b> <i class="fa-solid fa-circle-check"></i> </div> 
                                 <b> JavaScript is programming language that can run on browsers as well as desktops </b>
-                                <div class="text-muted">123K Tweets</div>                            </div>
+                                <div class="text-muted">123K Tweets</div>                            
+                            </div>
                             <div class="col-2"> 
                                 <img src="../../images/js_logo.png"
-                                class="card-img-top" alt="JS">                                  </div>
+                                class="card-img-top" alt="JS">                                  
+                            </div>
                         </div>
                     </li>
                     <li class="list-group-item">
@@ -101,10 +111,12 @@
                             <div class="col"> 
                                 <div class="text-muted">Web Development</div>
                                 <div> <b> jQuery </b> </div>
-                                <div class="text-muted">123K Tweets</div>                            </div>
+                                <div class="text-muted">123K Tweets</div>                            
+                            </div>
                             <div class="col-2"> 
                                 <img src="../../images/jquery_logo.png"
-                                class="card-img-top" alt="JQuery">                            </div>
+                                class="card-img-top" alt="JQuery">                            
+                            </div>
                         </div>
                     </li>
                     <li class="list-group-item">
@@ -112,10 +124,12 @@
                             <div class="col"> 
                                 <div class="text-muted">Web Development</div>
                                 <div> <b> NodeJS </b> <i class="fa-solid fa-circle-check"></i> </div> 
-                                <div class="text-muted">123K Tweets</div>                            </div>
+                                <div class="text-muted">123K Tweets</div>                            
+                            </div>
                             <div class="col-2"> 
                                 <img src="../../images/node_logo.png"
-                                class="card-img-top" alt="NodeJS">                            </div>
+                                class="card-img-top" alt="NodeJS">                            
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -131,7 +145,7 @@
                                 <img src="../../images/java_logo.jpg"
                                 class="card-img-top" alt="Java">
                             </div>
-                            <div class="col"> 
+                            <div class="col-sm-4"> 
                                 <b> Java </b> <i class="fa-solid fa-circle-check"></i>
                                 <div class="text-secondary">@Java</div> 
                             </div>
