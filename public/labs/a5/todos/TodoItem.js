@@ -7,5 +7,5 @@ const TodoItem = (todo) => {
         (${todo.status})
       </li>`
     );
-  }
-  export default TodoItem;
+}
+export default TodoItem;
