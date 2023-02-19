@@ -4,7 +4,10 @@ const PostSummaryItem = (postSummaryItem) => {
             <div class="row align-items-center">
             <div class="col"> 
                     <div class="text-muted">${postSummaryItem.topic}</div>
-                    <div> <b> ${postSummaryItem.userName} </b> <i class="fa-solid fa-circle-check"></i> - ${postSummaryItem.time} </div> 
+                    <div> 
+                        <b> ${postSummaryItem.userName} </b> <i class="fa-solid fa-circle-check"></i> 
+                        <span class="text-muted float-left"> - ${postSummaryItem.time} </span>
+                    </div>
                     <p class="text-wrap">
                         <b> ${postSummaryItem.title} </b>
                     </p>
