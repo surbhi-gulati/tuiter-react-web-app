@@ -1,5 +1,4 @@
-// import PostSummaryList from "../PostSummaryList/index.js";
-/* ${PostSummaryList()} */
+import PostSummaryList from "../PostSummaryList/index.js";
 
 const ExploreComponent = () => {
     return(`
@@ -9,7 +8,7 @@ const ExploreComponent = () => {
                 <input type="text" id="search-text" class="rounded-pill form-control" placeholder="Search Twitter"/>
             </div>
             <a href="explore-settings.html" class="col-2 float-end"> 
-                <i class="fa-solid fa-gear fa-2x" style="color: #0d6efd"></i>                               
+                <i class="fa-solid fa-gear fa-2x" style="color: #2a9fd6"></i>                               
             </a>
         </div>
         <ul class="nav mb-2 nav-tabs">
@@ -35,6 +34,7 @@ const ExploreComponent = () => {
                 <b>SpaceX's Starship</b>
             </h2>
         </div>
+        ${PostSummaryList()}
     `);
 }
 export default ExploreComponent;

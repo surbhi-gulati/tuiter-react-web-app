@@ -11,7 +11,7 @@ const WhoToFollowList = () => {
                 who.map(poster => {
                    return(WhoToFollowListItem(poster));
                 }).join('')
-             }
+            }
         </ul>
 `); 
 }
