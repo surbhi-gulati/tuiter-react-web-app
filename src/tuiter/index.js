@@ -1,4 +1,5 @@
 import Nav from "../nav";
+
 function Tuiter() {
  return (
    <div>
