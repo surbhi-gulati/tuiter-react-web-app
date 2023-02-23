@@ -37,4 +37,5 @@ const ExploreComponent = () => {
    </>
  );
 };
+
 export default ExploreComponent;
