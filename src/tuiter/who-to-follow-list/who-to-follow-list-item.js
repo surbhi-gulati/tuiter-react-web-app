@@ -21,5 +21,4 @@ const WhoToFollowListItem = (
   </li>
  );
 };
-
 export default WhoToFollowListItem;
