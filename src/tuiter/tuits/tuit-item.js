@@ -20,7 +20,8 @@ const TuitItem = ({ tuit }) => {
             <div className="col-10">
                 <div>
                     <b>{tuit.userName}</b>
-                    <i className="fa-solid fa-check-circle" />
+                    {' '}
+                    <i class="bi bi-patch-check-fill"  style={{ color: "#1DA1F2" }}></i>
                     <span className="ps-1" style={{ color: "gray" }}>
                         {tuit.handle}
                     </span>

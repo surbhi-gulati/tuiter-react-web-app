@@ -1,17 +1,16 @@
 import React from "react";
 
-const NavigationSidebar = (
- {
-   active = 'explore'
- }
-) => {
+const NavigationSidebar = ({active = 'explore'}) => {
  return (
    <div className="list-group">
      <a className="list-group-item">Tuiter</a>
-     <a className={`list-group-item ${active === 'home'?'active':''}`}>
-       Home
+     <a href="/tuiter/home.html"
+        className={`list-group-item ${active === 'home'?'active':''}`}>
+        <i className="fa-solid fa-house-chimney"></i>
+        Home
      </a>
-     <a className={`list-group-item ${active === 'explore'?'active':''}`}>
+     <a href="explore.html"
+        className={`list-group-item ${active === 'explore'?'active':''}`}>
        Explore
      </a>
      <a className={`list-group-item ${active === 'notifications'?'active':''}`}>

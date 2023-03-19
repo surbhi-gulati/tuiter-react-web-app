@@ -20,7 +20,7 @@
         "time": "2h",
         "title": "This is a truly snazzy title indeed",
         "image": "js_logo.png",
-        "liked": true,
+        "liked": false,
         "replies": 496,
         "retuits": 98,
         "likes": 12,
