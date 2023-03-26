@@ -6,7 +6,6 @@ const NavigationSidebar = ({active = 'explore'}) => {
      <a className="list-group-item">Tuiter</a>
      <a href="/tuiter/home.html"
         className={`list-group-item ${active === 'home'?'active':''}`}>
-        <i className="fa-solid fa-house-chimney"></i>
         Home
      </a>
      <a href="explore.html"

@@ -1,6 +1,12 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { updateTuitLikes } from "../reducers/tuits-reducer";
 
 const TuitStats = ({ tuit }) => {
+    const dispatch = useDispatch();
+    const updateLikesTuitHandler = (id) => {
+        dispatch(updateTuitLikes(id));
+    }
     return (
         <div className="row mt-2">
             <div className="col">
@@ -12,7 +18,7 @@ const TuitStats = ({ tuit }) => {
                 {' '} {tuit.retuits}
             </div>
             <div className="col">
-                <span>
+                <span onClick={() => updateLikesTuitHandler(tuit._id)}>
                     {tuit.liked && <i className=" ms-1 bi bi-heart-fill" style={{ color: "red" }}></i>}
                     {!tuit.liked && <i className=" ms-1 bi bi-heart"></i>}
                     {' '} {tuit.likes}
