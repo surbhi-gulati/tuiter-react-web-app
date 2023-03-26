@@ -2,7 +2,7 @@ import Labs from "./labs";
 import HelloWorld from "./labs/a6/hello-world";
 import Tuiter from "./tuiter";
 import Home from "./tuiter/home";
-import ExploreComponent from "./tuiter/explore";
+import Explore from "./tuiter/explore";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 
@@ -21,7 +21,7 @@ function App() {
                   element={<Tuiter />}>
               <Route index element={<Home />} />
               <Route path="home" element={<Home />} />
-              <Route path="explore" element={<ExploreComponent />} />
+              <Route path="explore" element={<Explore />} />
           </Route>
         </Routes>
       </div>
