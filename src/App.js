@@ -17,12 +17,10 @@ function App() {
                  element={<Labs/>}/>
           <Route path="/hello"
                  element={<HelloWorld/>}/>
-          <Route path="/tuiter" 
-                  element={<Tuiter />}>
-              <Route index element={<Home />} />
-              <Route path="home" element={<Home />} />
-              <Route path="explore" element={<Explore />} />
-          </Route>
+          <Route path="/tuiter/"
+                   element={<Tuiter/>}/>
+          <Route path="/tuiter/:path"
+                   element={<Tuiter/>}/>
         </Routes>
       </div>
     </BrowserRouter>
