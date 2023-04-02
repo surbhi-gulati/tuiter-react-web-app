@@ -1,13 +1,12 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "../reducers/tuits-reducer";
-
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 import TuitStats from "./tuit-stats";
 
 const TuitItem = ({ tuit }) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }      
     return (
     <li className="list-group-item">
@@ -15,7 +14,8 @@ const TuitItem = ({ tuit }) => {
             <div className="col-auto">
             <img width={50}
                 className="float-end rounded-circle"
-                src={`../images/${tuit.image}`}/>
+                src={`../images/${tuit.image}` }
+                alt="tuit"/>
             </div>
             <div className="col-10">
                 <div>
