@@ -44,8 +44,7 @@ const tuitsSlice = createSlice({
     [deleteTuitThunk.fulfilled] :
       (state, { payload }) => {
         state.loading = false
-        state.tuits = state.tuits
-        .filter(t => t._id !== payload)
+        state.tuits = state.tuits.filter(t => t._id !== payload)
       },
     [createTuitThunk.fulfilled]:
       (state, { payload }) => {
@@ -71,18 +70,18 @@ const tuitsSlice = createSlice({
       });
     },
     deleteTuit(state, action) {
-      const index = state.findIndex(tuit =>tuit._id === action.payload);
+      const index = state.findIndex(tuit => tuit._id === action.payload);
       state.splice(index, 1);
     },
     likeTuit(state, action) {
-      const tuitIndex = state.findIndex((tuit) => tuit._id === action.payload._id);
-      state[tuitIndex].liked = !state[tuitIndex].liked;
-      state[tuitIndex].likes += 1;
+      const tuitNdx = state.findIndex((tuit) => tuit._id === action.payload._id);
+      state[tuitNdx].liked = !state[tuitNdx].liked;
+      state[tuitNdx].likes += 1;
     },
     unlikeTuit(state, action) {
-      const tuitIndex = state.findIndex((tuit) => tuit._id === action.payload._id);
-      state[tuitIndex].liked = !state[tuitIndex].liked;
-      state[tuitIndex].likes -= 1;
+      const tuitNdx = state.findIndex((tuit) => tuit._id === action.payload._id);
+      state[tuitNdx].liked = !state[tuitNdx].liked;
+      state[tuitNdx].likes -= 1;
     }
   }
 });
