@@ -7,7 +7,7 @@ const initialState = {
 }
 
 const currentUser = {
-  "userName": "NASA",
+  "username": "NASA",
   "handle": "@nasa",
   "image": "nasa.png",
 };
@@ -82,9 +82,19 @@ const tuitsSlice = createSlice({
       const tuitNdx = state.findIndex((tuit) => tuit._id === action.payload._id);
       state[tuitNdx].liked = !state[tuitNdx].liked;
       state[tuitNdx].likes -= 1;
-    }
+    },
+    updateTuitLikes(state, action) {
+      const tuit = state.find(tuit => tuit._id === action.payload);
+      if (tuit.liked === true) {
+        tuit.liked = false;
+        tuit.likes--;
+      } else {
+        tuit.liked = true;
+        tuit.likes++;
+      }
+    },
   }
 });
 
-export const {createTuit, deleteTuit, likeTuit, unlikeTuit} = tuitsSlice.actions;
+export const {createTuit, deleteTuit, likeTuit, unlikeTuit, updateTuitLikes} = tuitsSlice.actions;
 export default tuitsSlice.reducer;

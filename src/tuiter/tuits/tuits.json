@@ -2,7 +2,7 @@
     {
       "_id": 234,
       "topic": "Space",
-      "userName": "SpaceX",
+      "username": "SpaceX",
       "time": "2h",
       "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
       "image": "spacex_logo.png",
@@ -16,7 +16,7 @@
     {
         "_id": 235,
         "topic": "Programming",
-        "userName": "JavaScript",
+        "username": "JavaScript",
         "time": "2h",
         "title": "This is a truly snazzy title indeed",
         "image": "js_logo.png",
@@ -30,7 +30,7 @@
     {
         "_id": 236,
         "topic": "Programming",
-        "userName": "JQuery",
+        "username": "JQuery",
         "time": "2h",
         "title": "I was wondering what your favorite cheese and chocolate combination is?",
         "image": "jquery_logo.png",

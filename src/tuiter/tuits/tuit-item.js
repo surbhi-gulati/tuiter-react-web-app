@@ -14,12 +14,12 @@ const TuitItem = ({ tuit }) => {
             <div className="col-auto">
             <img width={50}
                 className="float-end rounded-circle"
-                src={`../images/${tuit.image}` }
+                src={`/images/${tuit.image}`}
                 alt="tuit"/>
             </div>
             <div className="col-10">
                 <div>
-                    <b>{tuit.userName}</b>
+                    <b>{tuit.username}</b>
                     {' '}
                     <i class="bi bi-patch-check-fill"  style={{ color: "#1DA1F2" }}></i>
                     <span className="ps-1" style={{ color: "gray" }}>
