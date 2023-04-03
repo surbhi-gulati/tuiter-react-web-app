@@ -73,16 +73,6 @@ const tuitsSlice = createSlice({
       const index = state.findIndex(tuit => tuit._id === action.payload);
       state.splice(index, 1);
     },
-    likeTuit(state, action) {
-      const tuitNdx = state.findIndex((tuit) => tuit._id === action.payload._id);
-      state[tuitNdx].liked = !state[tuitNdx].liked;
-      state[tuitNdx].likes += 1;
-    },
-    unlikeTuit(state, action) {
-      const tuitNdx = state.findIndex((tuit) => tuit._id === action.payload._id);
-      state[tuitNdx].liked = !state[tuitNdx].liked;
-      state[tuitNdx].likes -= 1;
-    },
     updateTuitLikes(state, action) {
       const tuit = state.find(tuit => tuit._id === action.payload);
       if (tuit.liked === true) {
