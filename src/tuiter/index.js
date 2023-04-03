@@ -8,7 +8,6 @@ import whoReducer
 import { configureStore }
   from '@reduxjs/toolkit';
 import tuitsReducer from "./reducers/tuits-reducer";
-import { Outlet } from "react-router";
 import ExploreComponent from "./explore";
 import HomeComponent from "./home";
 const store = configureStore(
@@ -25,7 +24,8 @@ function Tuiter() {
         <div className="col-10 col-md-10 col-lg-7 col-xl-6"
               style={{"position": "relative"}}>
               {(path === 'home' || path === undefined) && <HomeComponent/>}
-              {path === 'explore' && <ExploreComponent/>}        </div>
+              {path === 'explore' && <ExploreComponent/>}
+        </div>
         <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
           <WhoToFollowList/>
         </div>

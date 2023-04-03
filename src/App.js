@@ -1,8 +1,6 @@
 import Labs from "./labs";
 import HelloWorld from "./labs/a6/hello-world";
 import Tuiter from "./tuiter";
-import Home from "./tuiter/home";
-import Explore from "./tuiter/explore";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 
