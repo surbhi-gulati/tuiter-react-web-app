@@ -17,6 +17,14 @@ const templateTuit = {
   "likes": 0,
 }
 
+export const createOwnTuitThunk = createAsyncThunk(
+  'tuits/createOwnTuit',
+  async (tuit) => {
+    tuit = {...currentUser, ...templateTuit, ...tuit};
+    const newTuit = await service.createTuit(tuit);
+    return newTuit;
+})
+
 export const createTuitThunk = createAsyncThunk(
   'tuits/createTuit',
   async (tuit) => {

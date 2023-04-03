@@ -86,5 +86,5 @@ const tuitsSlice = createSlice({
   }
 });
 
-export const {createTuit, deleteTuit, likeTuit, unlikeTuit, updateTuitLikes} = tuitsSlice.actions;
+export const {createTuit, deleteTuit, updateTuitLikes} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
