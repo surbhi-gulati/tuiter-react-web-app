@@ -22,7 +22,6 @@ export const createTuitThunk = createAsyncThunk(
   async (tuit) => {
     tuit = {...currentUser, ...templateTuit, ...tuit};
     const newTuit = await service.createTuit(tuit);
-    console.log("creating")
     return newTuit;
 })
 

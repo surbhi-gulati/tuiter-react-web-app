@@ -23,7 +23,7 @@ const templateTuit = {
 }
 
 const tuitsSlice = createSlice({
-name: 'tuits',
+  name: 'tuits',
   initialState,
   extraReducers: {
     [findTuitsThunk.pending]:
@@ -55,8 +55,7 @@ name: 'tuits',
     [updateTuitThunk.fulfilled]:
       (state, { payload }) => {
         state.loading = false
-        const tuitNdx = state.tuits
-        .findIndex((t) => t._id === payload._id)
+        const tuitNdx = state.tuits.findIndex((t) => t._id === payload._id);
         state.tuits[tuitNdx] = {
           ...state.tuits[tuitNdx],
           ...payload
@@ -69,7 +68,7 @@ name: 'tuits',
         ...action.payload,
         ...templateTuit,
         _id: (new Date()).getTime(),
-      })
+      });
     },
     deleteTuit(state, action) {
       const index = state.findIndex(tuit =>tuit._id === action.payload);
