@@ -1,0 +1,25 @@
+import axios from 'axios';
+
+// updated to use the node server deployment var from a9
+const API_BASE = process.env.REACT_APP_API_BASE_A9;
+const TUITS_API = `${API_BASE}/tuits`;
+
+export const createTuit = async (tuit) => {
+  const response = await axios.post(TUITS_API, tuit);
+  return response.data;
+}
+
+export const findTuits = async () => {
+  const response = await axios.get(TUITS_API);
+  return response.data;
+}
+
+export const deleteTuit = async (tid) => {
+  const response = await axios.delete(`${TUITS_API}/${tid}`);
+  return response.data;
+}
+
+export const updateTuit = async (tuit) => {
+  await axios.put(`${TUITS_API}/${tuit._id}`, tuit);
+  return tuit;
+}
